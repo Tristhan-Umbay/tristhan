@@ -1,0 +1,507 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    animation: fadeIn 1.5s ease-out;
+    background: #000000;
+    background: -moz-linear-gradient(-45deg, #000000 0%, #999EA2 50%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(-45deg, #000000 0%, #999EA2 50%, #FFFFFF 100%);
+    background: linear-gradient(135deg, #000000 0%, #999EA2 50%, #FFFFFF 100%);
+
+}
+
+    @media (max-width: 1536px) {}
+
+    @media (max-width: 1280px) {}
+
+    @media (max-width: 1024px) {}
+
+    @media (max-width: 768px) {}
+
+    @media (max-width: 640px) {}
+
+    @media(max-width: 475px) {}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.ict-logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.main-logo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    padding-block: 5px;
+    padding-inline: 5px;
+}
+
+/* Header & Navigation Bar */
+header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    padding: 1rem;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    animation: fadeIn 1s 0.5s forwards;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline solid 2.5px rgb(100, 255, 10);
+}
+
+.active {
+    color: rgb(100, 255, 10);
+}
+
+.home-logo {
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+}
+
+/* Fullscreen Section Styles */
+section {
+    height: auto; /* Make each section fullscreen */
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: transparent;
+}
+
+.home {
+    background-color: transparent;
+    opacity: 0;
+    animation: fadeIn 1s 0.5s forwards;
+    height: 100vh;
+}
+
+.home-content {
+    text-align: center;
+    animation: fadeIn 2s ease-out forwards; /* Add fade-in for the content */
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image {
+    width: 250px; /* You can adjust the image size */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInImage 2s 1s forwards; /* Fade-in animation for the image */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End in the normal position */
+    }
+}
+
+.about {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Styling the profile image */
+.profile-image {
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Adjust size as needed */
+    border-radius: 20%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Portfolio Section Styles */
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.porfollio {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.portfolio-item {
+    width: 30%;
+    margin: 20px;
+    opacity: 0;
+    animation: fadeIn 1s 1s forwards;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05); /* Image zoom effect */
+}
+
+.contact {
+    height: 100vh;
+}
+
+/* Footer */
+footer {
+    background-color: transparent;
+    color: white;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.form-container {
+    width: 400px;
+    padding: 30px 50px;
+    background: linear-gradient(145deg, #212121, #212121) padding-box, 
+                linear-gradient(145deg, transparent 35%, rgb(100, 255, 10), #40c9ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: 600;
+    font-size: 12px;
+    color: #717171;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid black;
+    color: white;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: rgb(100, 255, 10);
+  }
+  
+  button {
+    width: 40%;
+    padding: 12px 16px;
+    background-color: #313131;
+    border: 1px solid #414141;
+    color: #717171;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+  
+  button:active {
+    scale: 0.95;
+  }
+  
+  .success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+.about-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+span {
+    color: white;
+    font-size: 20px;
+}
+
+.skill-container {
+    width: 100px;
+    height: auto;
+    justify-content: center;
+
+}
+
+.gallery {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 70px;
+    height: auto;
+    margin: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.2);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-text {
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: transparent;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1.5px solid #ddd;
+}
+th {
+    background-color: #f4f4f4;
+}
+
+.text-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  color: #333;
+}
+
+/* Title Styling */
+.text-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Paragraph Styling */
+.text-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rebeccapurple;
+  margin-bottom: 15px;
+  text-align: left;
+}
