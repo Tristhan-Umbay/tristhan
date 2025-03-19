@@ -105,6 +105,7 @@ header nav ul li a:hover {
 
 /* Fullscreen Section Styles */
 section {
+    height: 100vh;
     display: grid;
     text-align: center;
     justify-content: center;
