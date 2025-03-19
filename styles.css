@@ -105,12 +105,10 @@ header nav ul li a:hover {
 
 /* Fullscreen Section Styles */
 section {
-    
     display: grid;
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
     background-color: transparent;
 }
 
@@ -118,6 +116,7 @@ section {
     background-color: transparent;
     opacity: 0;
     animation: fadeIn 1s 0.5s forwards;
+    height: 100vh;
 }
 
 .home-content {
@@ -181,7 +180,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
 .portfolio-item {
     width: 30%;
@@ -193,6 +192,7 @@ section {
 .portfolio-item img:hover {
     transform: scale(1.05); /* Image zoom effect */
 }
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -490,4 +490,8 @@ th {
 
 .white {
   color: white;
+}
+
+.contact {
+  height: 100vh;
 }
