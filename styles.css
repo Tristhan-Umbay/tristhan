@@ -105,8 +105,7 @@ header nav ul li a:hover {
 
 /* Fullscreen Section Styles */
 section {
-    height: auto; /* Make each section fullscreen */
-    width: auto;
+    
     display: grid;
     text-align: center;
     justify-content: center;
@@ -119,8 +118,6 @@ section {
     background-color: transparent;
     opacity: 0;
     animation: fadeIn 1s 0.5s forwards;
-    height: auto;
-    width: auto;
 }
 
 .home-content {
@@ -184,9 +181,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
-  width: auto;
-}
+ }
 
 .portfolio-item {
     width: 30%;
@@ -197,11 +192,6 @@ section {
 
 .portfolio-item img:hover {
     transform: scale(1.05); /* Image zoom effect */
-}
-
-.contact {
-    height: auto;
-    width: auto;
 }
 
 /* Animations */
